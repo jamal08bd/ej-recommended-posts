@@ -1,0 +1,44 @@
+// colors
+$item_box_bg: #F3F3F3;
+$item_box_bg_hover: #F9F9F9;
+$black: #000;
+$light_black: rgba(0, 0, 0, 0.55);
+$sep_color: rgba(0, 0, 0, 0.1);
+
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.editor-styles-wrapper {
+
+	.wp-block-ej-blocks-ej-recommended-posts {
+		a:where(:not(.wp-element-button)) {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		&__item-title {
+			a {
+				color: $black;
+
+				div {
+					display: inline;
+				}
+			}
+		}
+
+		&__item-meta-cat {
+			a {
+				color: $light_black;
+
+				&:hover {
+					color: $black;
+				}
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,165 @@
+// colors
+$item_box_bg: #F3F3F3;
+$item_box_bg_hover: #F9F9F9;
+$black: #000;
+$light_black: rgba(0, 0, 0, 0.55);
+$sep_color: rgba(0, 0, 0, 0.1);
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+$title_font: normal normal 600 24px/29.64px 'Poppins', sans-serif;
+$date_font: normal normal 400 14px/21px 'Poppins', sans-serif;
+$cat_font: normal normal 400 12px/18px 'Poppins', sans-serif;
+$readmore_font: normal normal 500 15px/24px 'Poppins', sans-serif;
+
+// images
+$arrow_icon: url('images/arrow.svg');
+$arrow_icon_hover: url('images/arrow-hover.svg');
+
+// transition
+$box_transition: all 0.2s ease-in-out;
+
+// shadows
+$box_drop_shadow: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.1));
+
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-ej-blocks-ej-recommended-posts {
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 34px;
+
+	@media only screen and (min-width: 768px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		vertical-align: middle;
+		margin: 0;
+		width: 100%;
+
+		@media only screen and (min-width: 768px) {
+			width: auto;
+		}
+	}
+
+	hr {
+		margin: 24px 0 26px;
+		padding: 0;
+		border: 0;
+		width: 100%;
+		height: 1px;
+		background-color: $sep_color;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	&__item {
+		background-color: $item_box_bg;
+		display: flex;
+		flex-direction: column;
+		transition: $box_transition;
+
+		&:nth-child(3n+2) {
+			@media only screen and (min-width: 768px) {
+				margin-top: -26px;
+				margin-bottom: 26px;
+			}
+		}
+
+		>* {
+			margin-left: 32px;
+			margin-right: 32px
+		}
+
+		&:hover {
+			background-color: $item_box_bg_hover;
+			filter: $box_drop_shadow;
+
+			.ej-readmore {
+				border-bottom: 1px solid $black;
+				color: $black;
+			}
+
+			.ej-readmore-icon {
+				background-image: $arrow_icon_hover;
+				background-size: 32px 32px;
+			}
+		}
+	}
+
+	&__item-image {
+		margin: 0;
+	}
+
+	&__item-title {
+		margin-top: 34px;
+
+		a {
+			color: $black;
+			font: $title_font;
+		}
+	}
+
+	time {
+		font: $date_font;
+		margin-top: 16px;
+		margin-bottom: 47px;
+		color: $black;
+		text-transform: uppercase;
+	}
+
+	&__item-meta {
+		margin-top: auto;
+	}
+
+	&__item-meta-cat {
+		a {
+			font: $cat_font;
+			text-transform: uppercase;
+			color: $light_black;
+
+			&:hover {
+				color: $black;
+			}
+		}
+	}
+
+	&__item-readmore {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font: $readmore_font;
+		letter-spacing: 0.01px;
+		margin-bottom: 26px;
+	}
+
+	.ej-readmore {
+		color: $light_black;
+		border-bottom: 1px solid transparent;
+		transition: $box_transition;
+	}
+
+	.ej-readmore-icon {
+		width: 32px;
+		height: 32px;
+		background-image: $arrow_icon;
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size: 24px 24px;
+		transition: $box_transition;
+	}
+}
