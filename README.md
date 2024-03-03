@@ -4,7 +4,7 @@
 
 Recommended Posts Block - This Gutenberg block plugin displays a grid of user-selected articles (Posts)
 
-![frontend-view.png](https://bitbucket.org/repo/EoERK9d/images/1700461311-frontend-view.png)
+![frontend-view.png](https://github.com/jamal08bd/ej-recommended-posts/blob/main/src/doc/frontend-view.png)
 
 ### Technical details and prerequisite ###
 
@@ -32,15 +32,15 @@ Recommended Posts Block - This Gutenberg block plugin displays a grid of user-se
 	- Typing to the field - 'TYPE AND SELECT POSTS' will suggest posts to select. Don't forget to select some posts :)
 	- Toggle field - 'Display featured image' display/hide the featured image.
 
-![backend-view.png](https://bitbucket.org/repo/EoERK9d/images/3117289942-backend-view.png)
+![backend-view.png](https://github.com/jamal08bd/ej-recommended-posts/blob/main/src/doc/backend-view.png)
 
 ### Screenshots ###
 	- src/doc/frontend-view.png
 	- src/doc/backend-view.png 
 
-[Front end view](https://bitbucket.org/jamal08bd/ej-recommended-posts/src/master/src/doc/backend-view.png)
+[Front end view](https://github.com/jamal08bd/ej-recommended-posts/blob/main/src/doc/frontend-view.png)
 
-[Back  end view](https://bitbucket.org/jamal08bd/ej-recommended-posts/src/master/src/doc/backend-view.png)
+[Back  end view](https://github.com/jamal08bd/ej-recommended-posts/blob/main/src/doc/backend-view.png)
 
 ### Docs and support  ###
 
@@ -57,13 +57,13 @@ With the default configuration, this plugin, in itself, does not:
 
 ### Translations ###
  
-The front-end view of this plugin is translation ready. You can use [poedit](https://poedit.net/)  or [loco translate](https://wordpress.org/plugins/loco-translate/) to translate the frontend strings to your own language. Within the next few updates, the Editor view of this plugin will also become translatable.  
+The front-end view of this plugin is translation-ready. You can use [poedit](https://poedit.net/)  or [loco translate](https://wordpress.org/plugins/loco-translate/) to translate the frontend strings to your own language. Within the next few updates, the Editor view of this plugin will also become translatable.  
 
 ### For Developers ###
  
 You are free to play with the code and develop your own Gutenberg plugin on top of this. Attribution is not mandatory but appreciated :)
 
-* Summary of setup
+* Summary of set up
 	- Clone this repository and then open your favorite git terminal "ex: visual studio code, git bash, etc".
 	- Run `npm install`. It will install all packages that are present on the repo's `package.json`.
 
